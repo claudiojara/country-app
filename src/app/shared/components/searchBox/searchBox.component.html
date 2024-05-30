@@ -1,2 +1,3 @@
-<input type="text" class="form-control" placeholder="Search..." [placeholder]="placeholder" #txtSearchInput
-  (keyup.enter)="emitSearchByCapital(txtSearchInput.value)" />
+<!-- (keyup.enter)="emitSearchByCapital(txtSearchInput.value)" -->
+<input [value]="initialValue" type="text" class="form-control" placeholder="Search..." [placeholder]="placeholder"
+  #txtSearchInput (keyup)="keypress(txtSearchInput.value)" />
